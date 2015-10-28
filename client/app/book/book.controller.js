@@ -4,7 +4,8 @@ angular.module('booksApp')
   .controller('BookCtrl', function($scope, Book) {
     function getAllBooks() {
       Book.getAllBooks().then(function(res){
-        $scope.books = res.book;
+        console.log(res);
+        $scope.books = res.data;
       });
     }
 

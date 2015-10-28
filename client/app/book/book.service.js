@@ -1,9 +1,12 @@
 'use strict';
 
 angular.module('booksApp')
-  .service('Book', function($http) {
+  .factory('Book', function($http) {
+    var bookFactory = {};
 
-    this.getAllBooks = function() {
+    bookFactory.getAllBooks = function() {
       return $http.get('/api/books');
     };
+
+    return bookFactory;
   });
