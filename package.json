@@ -1,0 +1,16 @@
+{
+  "name": "one_route",
+  "version": "1.0.0",
+  "description": "single get route through angular",
+  "main": "./server/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bruce Kellerman",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "mongoose": "^4.2.3"
+  }
+}
