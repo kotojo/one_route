@@ -2,7 +2,8 @@
 --
 ### This was made as demonstration of data flow through a mean stack application.
 
-* You can follow through the application starting on the index.html with directions saying what will happened commented throughout.
+* Checkout to the different branches to see each crud action all the way through
+* You can follow through the application starting on the index.html in each branch with directions saying what will happened commented throughout.
 * Each comment will direct you to the next location that the event will be triggered and explain what is happening.
 
 ## Prerequisites
