@@ -15,12 +15,12 @@ mongoose.connection.once('open', function() {
   console.log("Mongoose has connected to MongoDB!");
 });
 
-var app = express();
+var app = express(); // this gives us a top level function exported by express to set up our server
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('/Users/Kotojo/mean_stack/wdi_stuff/one_route/client'));
 
-require('./routes')(app);
+require('./routes')(app); // we pass our app into the routes here! Follow this to routes.js
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

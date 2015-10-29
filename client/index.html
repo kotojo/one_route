@@ -4,12 +4,14 @@
   <title></title>
   <base href="/">
 </head>
-<body ng-app='booksApp'>
+<body ng-app='booksApp'> <!-- ng-app makes everything in the body part of the booksApp module -->
 
-<h1><a ui-sref='book'>main page</a></h1>
+<h1><a ui-sref='book'>main page</a></h1> <!-- ui-sref links us to the 'book' state -->
+<!-- Follow it to client/app/book/book.js -->
 
-<div ui-view></div>
+<div ui-view></div> <!-- This is where ui router will render the html to aany state -->
 
+<!-- We add all out dependcies right here -->
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="app/app.js"></script>
